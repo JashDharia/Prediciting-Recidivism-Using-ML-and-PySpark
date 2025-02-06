@@ -27,6 +27,21 @@ The dataset comprises records from a **criminal justice database** with over **2
 - **Missing Values** ❓: Imputed or removed based on significance.
 - **Feature Engineering** ⚙️: Categorical variables like Education Level and Supervision Risk Score were encoded using one-hot encoding.
 
+## Visualization
+
+<img width="793" alt="Screenshot 2025-02-05 at 10 40 56 PM" src="https://github.com/user-attachments/assets/88409545-2e7a-4e4d-bcfc-18553da00344" />
+
+The correlation matrix highlights key insights into recidivism predictors. It shows a strong positive correlation between prior felony convictions and recidivism, emphasizing the importance of criminal history. The "Supervision Risk Score First" also strongly correlates with reoffending, indicating higher-risk individuals are more likely to recidivate. Interestingly, drug test results show a weak link to recidivism, while factors like program attendance and employment have a more significant influence on lowering reoffending likelihood.
+
+<img width="434" alt="Screenshot 2025-02-05 at 10 41 17 PM" src="https://github.com/user-attachments/assets/9006152e-e0a9-4e3d-9907-7852d957d560" />
+
+The density plot visualizes the distribution of THC-positive drug tests across different
+age groups at the time of release. The majority of tests concentrate near zero across all age
+groups, indicating that most individuals tested negative for THC. Younger age groups, such as
+18-22 and 23-27, exhibit slightly broader distributions compared to older groups, suggesting a
+marginally higher prevalence of THC-positive tests. However, the overall density diminishes
+significantly as the THC-positive test rate increases, irrespective of age
+
 ### Key Features for Prediction 🔑:
 - Age at Release, Gender, Race, Education Level 📅
 - Prior Arrests (felony, violent, property, drug) 🚔
